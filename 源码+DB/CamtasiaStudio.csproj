@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{205BE1C2-E5BF-46A7-9C16-022221233DB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CamtasiaStudio</RootNamespace>
+    <AssemblyName>CamtasiaStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\numbers file.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCamtasiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCamtasiaForm.designer.cs">
+      <DependentUpon>AddCamtasiaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeeForm.Designer.cs">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGoodsForm.designer.cs">
+      <DependentUpon>AddGoodsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CamtasiaInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CamtasiaInfoForm.designer.cs">
+      <DependentUpon>CamtasiaInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsInfoForm.Designer.cs">
+      <DependentUpon>GoodsInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPrinter.cs" />
+    <Compile Include="InventoryInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryInfoForm.Designer.cs">
+      <DependentUpon>InventoryInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutboundDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutboundDetailForm.designer.cs">
+      <DependentUpon>OutboundDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutboundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutboundForm.designer.cs">
+      <DependentUpon>OutboundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportformsInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportformsInfoForm.designer.cs">
+      <DependentUpon>ReportformsInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportformsViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportformsViewForm.Designer.cs">
+      <DependentUpon>ReportformsViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StorageDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageDetailForm.designer.cs">
+      <DependentUpon>StorageDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StorageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StorageForm.designer.cs">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCamtasiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCamtasiaForm.designer.cs">
+      <DependentUpon>UpdateCamtasiaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEmployeeForm.Designer.cs">
+      <DependentUpon>UpdateEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateGoodsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateGoodsForm.Designer.cs">
+      <DependentUpon>UpdateGoodsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCamtasiaForm.resx">
+      <DependentUpon>AddCamtasiaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeeForm.resx">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGoodsForm.resx">
+      <DependentUpon>AddGoodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CamtasiaInfoForm.resx">
+      <DependentUpon>CamtasiaInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsInfoForm.resx">
+      <DependentUpon>GoodsInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryInfoForm.resx">
+      <DependentUpon>InventoryInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutboundDetailForm.resx">
+      <DependentUpon>OutboundDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutboundForm.resx">
+      <DependentUpon>OutboundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportformsInfoForm.resx">
+      <DependentUpon>ReportformsInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportformsViewForm.resx">
+      <DependentUpon>ReportformsViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StorageDetailForm.resx">
+      <DependentUpon>StorageDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StorageForm.resx">
+      <DependentUpon>StorageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCamtasiaForm.resx">
+      <DependentUpon>UpdateCamtasiaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEmployeeForm.resx">
+      <DependentUpon>UpdateEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGoodsForm.resx">
+      <DependentUpon>UpdateGoodsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ckgl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yggl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spgl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rkcx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ckcx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rkgl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chukugl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kccx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sjbb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tjxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zhui.jpg" />
+    <None Include="Resources\zhuxiao.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\esc.png" />
+    <None Include="Resources\aboutbg.png" />
+    <None Include="Resources\2014123014192857.jpg" />
+    <None Include="Resources\10770176_151505571101_2.jpg" />
+    <None Include="Resources\10770176_151505571101_21.jpg" />
+    <None Include="Resources\MAXTWO.jpg" />
+    <None Include="Resources\20141230141928571.jpg" />
+    <Content Include="Resources\numbers file.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
